@@ -1,0 +1,350 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:Arial;
+    background:url(https://static.vecteezy.com/ti/vecteur-libre/p1/46795036-naturel-montagnes-paysage-illustration-pour-contexte-vectoriel.jpg) no-repeat center center/cover;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a {
+    color: rgb(7, 6, 7);
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a{
+    color: rgb(6, 6, 7);
+    font-size: 22px;
+    font-weight: 600; 
+}
+nav .right a{
+    color: black;
+    margin: 0 10px;
+}
+nav .right a:last-child {
+    color:azure;
+    background-color:black;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+nav .right a span{
+    margin-left: 5px;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.hero .text h2{
+    font-size: 45px;
+    color :rgb(8, 81, 116);
+}
+
+.hero .text .links{
+    margin-top: 25px;
+}
+.hero .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.hero .text .links a:hover{
+    color: aqua;
+    border: 2px solid aqua;
+}
+
+
+.hero .text{
+    flex: 5;
+}
+
+.hero .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero .headshot img{
+    border-radius: 50%;
+    width: 350px;
+}
+
+@media(max-widht:600px){
+    nav{
+        padding: 0 20px;
+    }
+    nav .right a span{
+        display: none;
+    }
+    nav .right a{
+        font-size: 22px;
+    }
+    nav .right a:last-child{
+        color: black;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .hobby{
+        padding: 0 20px;
+    }
+
+    .hobby .cells .cell span{
+        font-size: 16px;
+    }
+
+    .About{
+        padding: 0 20px;
+    }
+    .contacts{
+        padding: 0 20px
+    }
+    .Situation{
+        padding: 0 20px;
+    }
+}
+
+
+@media(max-width:850px){
+    .hero .text h2{
+        font-size: 35px;
+    }
+}
+@media(max-width:740px){
+    .hero {
+        flex-direction: column-reverse;
+    }
+    .hero .headshot img{
+        width: 300px;
+    }
+    .About h2{
+        text-align: center;
+    }
+    .About .group{
+        flex-direction: column;
+    }
+
+    .Situation h2{
+        text-align: center;
+    }
+
+    .Situation .group{
+        flex-direction:column ;
+    }
+
+    .contacts .group{
+        flex-direction: column;
+    }
+
+}
+
+.About{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.About h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+    color :rgb(8, 81, 116);
+}
+
+.About .group{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.About .group .person{
+    text-align: center;
+    flex: 2;
+}
+
+.About .group .text{
+    flex: 8;
+}
+.About .group .person img{
+    aspect-ratio: 1/1;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.About .group .person p{
+    font-weight: 600;
+}
+
+.About .group .person p:last-child{
+    font-weight: normal;
+}
+
+.hobby{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.hobby h2{
+    text-align: center;
+    font-size: 35px;
+    color :rgb(8, 81, 116);
+}
+
+.hobby .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hobby .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hobby .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1.5px solid azure;
+    border-radius: 5px;
+    margin: 10px;
+    gap: 10px;
+}
+
+.hobby .cells .cell img{
+    width: 50px;
+    height: 50px ;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.hobby .cells .cell span{
+    font-size: 18px;
+}
+
+
+.Situation{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.Situation h2{
+    text-align: center;
+    font-size: 35px;
+    color :rgb(8, 81, 116);
+}
+
+.Situation .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Situation .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Situation .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1.5px solid azure;
+    border-radius: 5px;
+    margin: 10px;
+    gap: 10px;
+}
+
+.Situation .cells .cell img{
+    width: 50px;
+    height: 50px ;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.Situation .cells .cell span{
+    font-size: 18px;
+}
+
+.contacts{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contacts h2{
+    font-size: 35px;
+    color :rgb(8, 81, 116);
+}
+
+.contacts .group{
+    display: flex;
+    gap: 50px;
+}
+
+.contacts .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contacts .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts .group form input,
+.contacts .group form textarea
+{
+    font-family:Arial;
+    border: 2px solid aqua;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contacts .group form button{
+    font-size: 16px;
+    font-family: Arial;
+    color: aliceblue;
+    background-color: aqua;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.contacts .group form button:hover{
+    filter: brightness(.9);
+}
